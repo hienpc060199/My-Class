@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery trong Javascript</title>
+	
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<meta charset="utf-8">
+	<!--Jquery-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!--JS-->
+	<script type="text/javascript" src="test.js"></script>
+	
+	<!-- Only CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--JS, Popper.js, and jQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!--Link Icon-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--MENU FIXED-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed bg">
+		<div class="container">
+		  <a class="navbar-brand textMenuBg" href="#">Logo</a>
+
+		  <button class="navbar-toggler">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <script type="text/javascript">
+		  	$(document).ready(function()
+		  		{
+		  			$(".navbar-toggler").click(function()
+		  				{
+		  					$(".coll").toggle();
+		  				});
+		  			// {
+		  				// $(".coll").css({"display": "block"});
+		  				// $(".navbar-toggler").css({"display": "none"});
+		  			// })
+		  		});
+		  </script>
+
+		  <div class="coll navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+			    <li class="li">
+	        		<a class="nav-link textMenuBg" href="#about">Gioi Thieu<!-- <span class="sr-only">(current)</span> --></a>
+	      		</li>
+
+	      		<li class="li">
+	        		<a class="nav-link textMenuBg" href="#services">Dich Vu<span class="sr-only">(current)</span></a>
+	      		</li>
+
+	      		<li class="li">
+	        		<a class="nav-link textMenuBg" href="#portfolio">Du An<span class="sr-only">(current)</span></a>
+	      		</li>
+
+	      		<li class="li">
+	        		<a class="nav-link textMenuBg" href="#pricing">Gia<span class="sr-only">(current)</span></a>
+	      		</li>
+
+	      		<li class="li">
+	        		<a class="nav-link textMenuBg" href="#contact">Lien He<span class="sr-only">(current)</span></a>
+	      		</li>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+
+<!--TITLE-->
+	<div class="jumbotron text-center">
+		<h1>MYCLASS.VN</h1>
+		<p>Doi ngu tre - Giau tam huyet</p>
+		<form class="form-inline">
+			<input type="email" class="form-control" size="50" name="" placeholder="Nhập địa chỉ Email" required>
+			<button type="button" class="btn btn-danger">Dang ki theo doi</button>
+		</form>
+	</div>
+
+<!--GIOI THIEU-->
+	<div id="about" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>GIOI THIEU MYCLASS.VN</h2><br>
+				<h4>Myclass.vn - Ben canh san pham tam huyet - He thong day lap trinh truc tuyen myclass.vn, chung toi con la don vi gia cong phan mem cho cac cong ty trong va ngoai nuoc voi nhung san pham mang net khac biet va theo tung don dat hang rieng le</h4><br>
+				<p>Chung toi cam ket den nhung san pham chat luong cao nhat, hien dai nhat, than thien voi nguoi dung va myclass.vn danh gia cao cac cong viec bao tri sau khi giao san pham cho khach hang</p>
+				<br>
+				<button type="button" class="btn btn-secondary btn-lg">Lien he voi chung toi</button>
+				<br>
+			</div>
+
+			<div class="col-sm-4 slideanim" style="text-align: right;">
+				<i class="fas fa-signal sizeLogo"></i>
+			</div>
+		</div>
+	</div>
+
+<!--GIA TRI-->
+	<div class="container-fluid bg-grey">
+		<div class="row ">
+			<div class="col-sm-4 slideanim">
+				<i class="fas fa-globe-americas sizeLogo"></i>
+			</div>
+
+			<div class="col-sm-8">
+				<h2>GIA TRI CUA MYCLASS.VN MANG LAI</h2><br>
+				<h4><strong>Sứ mệnh : </strong>Don vi tien phong tai Viet Nam ve linh vuc trinh trc tuyen. Don vi gia cong phan mem voi nhung san pham chat luong, uy tin cho khach hang</h4><br>
+				<p><strong>Tam nhin : </strong>Ben canh cac he thong e-learning cho lap trinh, chung toi con mo rong sang cac mang day truc tuyen cho nhieu nganfh nghe khac va cho nhieu don vi khac trong ca nuoc. Sau hoan thien trong nuoc, myclass.vn chung toi se mo rong ra cac thi truong Dong Nam A va the gioi</p><br>
+			</div>
+		</div>
+	</div>
+
+
+<!--PULL YEU-->
+	<div id="services" class="container-fluid text-center">
+		<h2>DICH VU</h2>
+		<p>Cac dich vu chung toi bao gom</p>
+		<br>
+
+		<div class="row slideanim">
+			<div class="col-sm-4 paddingDiv">
+				<i class="fas fa-power-off sizeIcon"></i>
+				<h4 class="paddingH4">Elearing-Framework</h4>
+				<p>Phan mem khung day truc tuyen .</p>
+			</div>
+			<div class="col-sm-4 paddingDiv">
+				<i class="fas fa-heart sizeIcon"></i>
+				<h4 class="paddingH4">Phat trien website</h4>
+				<p>Chung toi phat trien website theo cac don dat hang .</p>
+			</div>
+			<div class="col-sm-4 paddingDiv">
+				<i class="fas fa-lock sizeIcon"></i>
+				<h4 class="paddingH4">He thong CRM</h4>
+				<p>He thong quan tri khach hang CRM .</p>
+			</div>
+		</div>
+
+		<div class="row slideanim">
+			<div class="col-sm-4 paddingDiv">
+				<i class="fab fa-envira sizeIcon"></i>
+				<h4 class="paddingH4">He thong Phong kham dien tu</h4>
+				<p>Xay dung he thong phong khac dien tu .</p>
+			</div>
+			<div class="col-sm-4 paddingDiv">
+				<i class="fas fa-certificate sizeIcon"></i>
+				<h4 class="paddingH4">He thong quan lt nha khoa</h4>
+				<p>He thong quan lt nha khoa .</p>
+			</div>
+			<div class="col-sm-4 paddingDiv">
+				<i class="fas fa-wrench sizeIcon"></i>
+				<h4 class="paddingH4">Quan ly kho</h4>
+				<p>He thong quan ly kho .</p>
+			</div>
+		</div>		
+	</div>
+
+
+<!--PULL XINH-->
+	<div id="portfolio" class="container-fluid text-center">
+		<h2>DU AN TIEU BIEU</h2>
+		<h4>Mot trong nhung du an myclass.vn da trien khai</h4>
+		<br>
+
+		<div class="row slideanim">
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="image/duan1.jpg" style="width: 100%;">
+					<p>Du an 1</p>
+					<p>Du an web 1</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="image/duan2.jpg" style="width: 100%;">
+					<p>Du an 2</p>
+					<p>Du an web 2</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="image/duan3.jpg" style="width: 100%;">
+					<p>Du an 3</p>
+					<p>Du an web 3</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--BAN PULL-->
+	<div class="container-fluid text-center">
+		<h2>KHACH HANG NOI VE CHUNG TOI</h2>
+		<div class="bd-example">
+		  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		    <ol class="carousel-indicators">
+		      <li class="radius" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+		      <li class="radius" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+		      <li class="radius" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		    </ol>
+		    <div class="carousel-inner">
+		      <div class="carousel-item active widthSlide">
+		        <div class="carousel-caption d-none d-md-block contentSlide">
+		          <p>"He thong quan ly Kho cua myclass.vn da xay dung giup toi tiet kiem nhieu thoi gian va chi phi<br>My Le, Pho giam doc, Enco"</p>
+		        </div>
+		      </div>
+		      <div class="carousel-item widthSlide">
+		        <div class="carousel-caption d-none d-md-block contentSlide">
+		          <p>"Trang web myclass.vn lam cho chung toi that su an tuong<br> My Linh, Chu tich, Nkakhoaphutho"</p>
+		        </div>
+		      </div>
+		      <div class="carousel-item widthSlide">
+		        <div class="carousel-caption d-none d-md-block contentSlide">
+		        <p>"Cam on myclass.vn da mang lai nhung khoa hoc tuyet voi <br> Nguyen Duy, Dai hoc QG Ha Noi , Binh Luan"</p>
+		        </div>
+		      </div>
+		    </div>
+		    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+		     <!--  <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+		      <!-- <span class="sr-only">Previous</span> -->
+		      <i class="fas fa-angle-left next"></i>
+		    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+		      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+		      <!-- <span class="sr-only">Next</span> -->
+		      <i class="fas fa-angle-right next"></i>
+		    </a>
+		  </div>
+		</div>
+	</div>
+
+<!--NANG CAO-->
+	<div id="pricing" class="container-fluid text-center">
+		<h2>BANG GIA</h2>
+		<p>Chon gia ma ban muon xay dung website</p>
+		<div class="row slideanim">
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Co Ban</h1>
+					</div>
+
+					<div class="panel-body">
+						<p>15 Lorem</p>
+						<p>20 Ipsum</p>
+						<p>15 Dolor</p>
+						<p>5 Sit</p>
+						<p>Endless Amet</p>
+					</div>
+
+					<div class="panel-footer">
+						<h2>$199</h2>
+						<p>moi thang</p>
+						<button type="button" class="btn btn-secondary btn-lg btn-bg" disabled>Dang ki</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Nang Cao</h1>
+					</div>
+
+					<div class="panel-body">
+						<p>50 Lorem</p>
+						<p>25 Ipsum</p>
+						<p>10 Dolor</p>
+						<p>5 Sit</p>
+						<p>Endless Amet</p>
+					</div>
+
+					<div class="panel-footer">
+						<h2>$299</h2>
+						<p>moi thang</p>
+						<button type="button" class="btn btn-secondary btn-lg btn-bg" disabled>Dang ki</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Cao Cap</h1>
+					</div>
+
+					<div class="panel-body">
+						<p>100 Lorem</p>
+						<p>50 Ipsum</p>
+						<p>20 Dolor</p>
+						<p>10 Sit</p>
+						<p>Endless Amet</p>
+					</div>
+
+					<div class="panel-footer">
+						<h2>$399</h2>
+						<p>moi thang</p>
+						<button type="button" class="btn btn-secondary btn-lg btn-bg" disabled>Dang ki</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--DIA CHI-->
+	<div class="container-fluid text-center width" id="contact">
+		<h2 class="contact">LIEN HE</h2>
+		<div class="row slideanim">
+			<div class="col-sm-5 textleft">
+				<p>Hay lien he voi chung toi, chung toi se tra loi trong vong 8 gio</p>
+				<p><i class="fas fa-map-marker-alt iconContact"></i>Ho Chi Minh, Viet Nam</p>
+				<p><i class="fas fa-mobile-alt iconContact"></i>0961 05 10 14</p>
+				<p><i class="fas fa-envelope iconContact"></i>support@myclass.vn</p>
+			</div>
+
+			<div class="col-sm-7">
+				<div class="row colum">
+					<div class="col-sm-6 address">
+						<input type="" name="" id="name" class="form-control" placeholder="Tên">
+					</div>
+
+					<div class="col-sm-6 address">
+						<input type="" name="" id="email" class="form-control" placeholder="Email">
+					</div>
+				</div>
+	
+				<textarea type="" name="" id="comment" class="form-control" placeholder="Ghi Chú"></textarea>
+
+				<div class="col-sm-12 submit">
+					<input type="submit" name="" class="btn btn-submit" value="Gửi yêu cầu">
+				</div>		
+			</div>
+		</div>
+	</div>
+
+<!--Google map-->
+	<div id="googleMap" style="height: 400px; width: 100%;"></div>
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		var myCenter = new google.maps.LatLng(21.2156279, 105.6612738);
+
+		function initialize()
+		{
+			var mapProp = {
+				center:myCenter,
+				zoom:12,
+				scrollwheel:false,
+				draggable:false,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+			var marker = new google.maps.Marker({
+				position:myCenter,
+			});
+
+			marker.setMap(map);
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+<!--Animation Slide-->
+	<script type="text/javascript">
+		$(document).ready(function() // Tao ham Jquery
+			{
+			$(window).scroll(function() // Kich hoat thanh scroll
+				{
+					$(".slideanim").each(function() /* Lấy từng tk class bị mất đi rồi chấm each() là 
+										Thực hiện một hành động cho mỗi phần tử, mỗi lần thực hiện một phần tử */
+					{
+						var pos = $(this).offset().top; // pos = tọa độ của tk class cách Top
+
+						var winTop = $(window).scrollTop(); /* winTop = lấy vị trí hiện tại của thanh scroll trong 
+																trang web win đâu*/
+						if(pos < winTop + 500) //Khi tọa độ của class < hơn tọa độ ban đầu + 500 thì thêm class mới
+						{
+							$(this).addClass("slide");
+						}
+					});
+				});
+			});
+	</script>
+
+<!--PHAN CUOI-->
+	<div id="footer" class="container-fluid text-center">
+		<p>Khoa hoc web voi responsive, bootstrap tai myclasss.vn<a href="#myPage"> www.myclass.vn</a></p>
+	</div>
+</body>
+</html>

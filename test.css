@@ -1,0 +1,314 @@
+.jumbotron
+{
+	background-color: #1ECBF4 !important;
+	color: #ffffff;
+	padding: 100px 25px !important;
+}
+
+.form-inline 
+{
+	justify-content: center;
+}
+
+.container-fluid
+{
+	padding: 60px 50px !important;
+}
+
+.bg-grey
+{
+	background-color: #f6f6f6;
+}
+
+.pull 
+{
+	width: 100%;
+}
+
+/*.row 
+{
+	align-items: center;
+}*/
+
+.thumbnail
+{
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+
+.thumbnail img
+{
+	width: 100%;
+	height: 270px;
+	margin-bottom: 10px;
+}
+
+.carousel-control-prev-icon
+{
+	padding: 30px;
+}
+
+.carousel-control-next-icon
+{
+	padding: 30px;
+}
+
+.panel 
+{
+	border: 1px solid #1ECBF4;
+	border-radius: 0 !important;
+	transition: box-shadow 0.5s;
+}
+
+.panel:hover
+{
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .bth:hover{
+	border: 1px solid #1ECBF4;
+	background-color: #fff !important;
+	color: #1ECBF4;
+}
+
+.panel-footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 1px solid #1ECBF4;
+}
+
+.panel-body
+{
+	padding-top: 30px;
+	padding-bottom: 30px;	
+}
+
+.panel-heading
+{
+	color: #fff !important;
+	background-color: #1ECBF4 !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+}
+
+@media all and (max-width: 678px) {
+   .col-sm-4
+   {
+   	padding-bottom: 20px;
+   }
+
+   .address {
+   	padding-bottom: 20px;
+   }
+}   
+
+.colum
+{
+	padding-bottom: 20px;
+}
+
+.btn-submit {
+	background-color: white !important;
+	float: right;
+}
+
+.btn-bg {
+	background-color: #1ECBF4 !important;
+	border: 0px !important;
+}
+
+.submit {
+	padding-top: 15px;
+	padding-right: 0px;
+}
+
+#comment
+{
+	padding: 30px;
+}
+
+.width {
+	background-color: #f3f3f3;
+	color: #000000;
+	text-align: left;
+}
+
+.fixed
+{	
+	width: 100%;
+	position: fixed !important;
+	top: 0;
+}
+
+#navbarNav
+{
+	justify-content: flex-end;
+}
+
+.bg
+{
+	z-index: 1000;
+	background-color: #1ecbf4;
+}
+
+.li
+{
+	/*padding-left: 25px;
+    padding-right: 25px;*/
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+	display: flex !important;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+}
+
+.coll {
+	display: none;
+}
+
+.li:hover
+{
+	background-color: white;
+}
+
+.li > .textMenuBg:hover {
+	color: #1ecbf4 !important;
+}
+
+.show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+    background-color: white;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: #1ecbf4 !important;
+  }
+
+  .slideanim {visibility: hidden;}
+
+  .slide {
+  	animation-name: abc;
+  	-webkit-animation-name: abc;
+  	animation-duration: 1s;
+  	-webkit-animation-duration: 1s;
+  	visibility: visible; 
+  }
+
+  @keyframes abc {
+  	0% {
+  		opacity: 0;
+  		transform: translateY(70%);
+  	}
+
+  	100% {
+  		opacity: 1;
+  		transform: translateY(0%);
+  	}
+  }
+
+  @-webkit-keyframes-abc {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: translateY(70%);
+  	}
+
+  	100% {
+  		opacity: 1;
+  		-webkit-transform: translateY(0%);
+  	}
+  }
+
+.phone {
+	padding-right: 10px;
+}
+
+i.fas {
+	font-size: 20px;
+}
+
+.navbar {
+	padding: 0px !important;
+}
+
+.contact {
+	margin-bottom: 20px;
+	color: #000000;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.textMenuBg {
+	color: #ffffff !important;
+}
+
+.iconContact {
+	margin-right: 7px;
+}
+
+.widthSlide {
+	direction: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 250px;
+	background-color: #f3f3f3;
+}
+
+.radius {
+	border-radius: 70%;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #ffffff !important;
+    border: 2px solid #1ecbf4 !important;
+}
+
+.contentSlide {
+	color: #000000 !important;
+}
+
+.sizeIcon {
+	font-size: 50px !important;
+	color: #1ecbf4 !important;
+	margin-bottom: 20px;
+}
+
+.sizeLogo {
+	font-size: 200px !important;
+	color: #1ecbf4 !important;
+}
+
+.carousel-caption {
+	padding-bottom: 50px !important;
+	padding-top: 0px !important;
+	font-weight: 500;
+    font-size: 22px;
+}
+
+.next {
+	font-size: 70px !important;
+	color: #1ecbf4 !important;
+}
+
+li.radius.active {
+	background-color: #1ecbf4 !important;
+}
+
+.paddingH4 {
+	padding-bottom: 20px;
+}
+
+.paddingDiv {
+	padding-bottom: 40px;
+}
